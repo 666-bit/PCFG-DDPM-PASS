@@ -12,11 +12,17 @@ wget https://github.com/brannondorsey/PassGAN/releases/download/data/rockyou-tra
 cd ../
 ```
 
+## 依赖
+cuda11.8 cudnn8.6.0
+tensroflow==2.12.0
+tensorflow-gpu==2.12.0
+matplotlib
+numpy
+DDPM依赖与其余模型不同，需要pytorch与cuda11.8
+
+
 ## PassGAN baseline
-需要tensroflow==2.12.0，cuda11.8 cudnn8.6.0
-对PassGAN尽心些许改进，使用WGAN-div作为附加损失函数。
-
-
+对PassGAN进行改进，使用WGAN-div作为附加损失函数。
 ```
 #训练
 python train_gan.py train --output gan_baseline --training-data data/rockyou-train.txt
