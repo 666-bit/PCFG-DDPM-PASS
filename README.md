@@ -76,7 +76,6 @@ python sample_diffusion.py  \
 ```
 
 ## PCFG-GAN
-需要tensroflow==2.12.0，cuda11.8 cudnn8.6.0
 PCFG-GAN分为两步训练，首先训练noise到PCFG文法的概率，之后训练PCFG文法到具体文本的概率。两步模型使用GAN。这两步的训练都需要PCFG文法数据。
 
 首先，生成PCFG文法数据，依赖pcfg_cracker项目
