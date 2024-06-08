@@ -40,7 +40,7 @@ python train_gan.py sample \
 
 
 ## LSTM baseline
-需要tensroflow==2.12.0，cuda11.8 cudnn8.6.0
+
 ```
 #训练
 python train_LSTM.py \
