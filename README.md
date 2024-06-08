@@ -13,11 +13,13 @@ cd ../
 ```
 
 ## 依赖
+```
 cuda11.8 cudnn8.6.0
 tensroflow==2.12.0
 tensorflow-gpu==2.12.0
 matplotlib
 numpy
+```
 DDPM依赖与其余模型不同，需要pytorch与cuda11.8
 
 
