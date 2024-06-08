@@ -1,6 +1,16 @@
 # 基于PCFG，GAN，DDPM的口令猜测
 
-本项目基于PassGAN改进而来，并使用了pcfg_cracker工具，支持LSTM模型，DDPM模型，与PCFG-GAN模型进行口令生成任务。
+本项目基于[PassGAN](https://github.com/brannondorsey/PassGAN)改进而来，并使用了pcfg_cracker工具，支持LSTM模型，DDPM模型，与PCFG-GAN模型进行口令生成任务。
+
+## 数据获取
+使用rockyou数据集，其中训练集2000万条，测试集500万条
+```
+mkdir data
+cd ./data
+wget https://github.com/brannondorsey/PassGAN/releases/download/data/rockyou-test.txt
+wget https://github.com/brannondorsey/PassGAN/releases/download/data/rockyou-train.txt
+cd ../
+```
 
 ## PassGAN baseline
 需要tensroflow==2.12.0，cuda11.8 cudnn8.6.0
