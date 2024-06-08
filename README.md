@@ -102,7 +102,7 @@ python train_gan.py train --output gan_O --training-data data/O_train.txt
 checkpoint_dic = {
     "A": "gan_A/checkpoints/checkpoint_195000.ckpt",
     "D": "gan_D/checkpoints/checkpoint_195000.ckpt",
-    "O": "gam_O/checkpoints/checkpoint_195000.ckpt",
+    "O": "gan_O/checkpoints/checkpoint_195000.ckpt",
 }
 
 python sample_gan_gan.py --input_dir gan_PCFG --checkpoint gan_PCFG/checkpoints/checkpoint_95000.ckpt --rules_path data/Rules/result --output gan_gan.txt --num_samples 1000000
