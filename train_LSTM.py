@@ -61,8 +61,7 @@ def parse_args():
     parser.add_argument('--iters', type=int, default=1000000, help='Number of samples to generate')  
     
     parser.add_argument('--epochs', type=int, default=100, help='Number of samples to generate')  
-  
-    # 检查点文件  
+    
     parser.add_argument('--sav_every', '-s',type=int,default=5000,help='Save model checkpoints after this many iterations (default: 5000)')\
 
     parser.add_argument('--data_set', type=str, default="data/rockyou-train.txt", help='Path to the train data')  
@@ -153,7 +152,7 @@ def train_run(args):
             print(f"\n----- Save model after iters: {i}")
             model.save(f"{args.output_dir}/checkpoints/model_{args.batch_size}_{args.iters}_iter_{i}.h5")
         
-    model.save(f"{args.output_dir}/model_final.h5")
+    model.save(f"{args.output_dir}/checkpoints/model_final.h5")
 
     
 # 使用示例  
